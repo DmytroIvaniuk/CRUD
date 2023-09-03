@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.name-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    height: 300px;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+}
+
+.create-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-section,
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.edit-user {
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.error-message {
+    display: block;
+    font-size: 24px;
+}
+
+
+p {
+    margin: 0;
+}
+
+.delete-message {
+    font-size: 36px;
+    color: darkgreen;
+}
+
+.error-message span {
+    font-size: 40px;
+    color: darkred;
+    margin: 0;
+}
+
+.loader {
+    border: 5px solid lightgray;
+    border-radius: 50%;
+    border-top: 5px solid rgb(102, 102, 255);
+    border-bottom: 5px solid rgb(102, 102, 255);
+    height: 50px;
+    width: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
